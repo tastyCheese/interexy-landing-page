@@ -4,6 +4,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Commissioner');
 @import url('https://fonts.googleapis.com/css2?family=Nunito');
 
+html {
+    margin-top: 65px;
+}
+
+html header {
+    top: 0;
+}
+
 body {
     font-family: sans-serif;
 
@@ -11,6 +19,25 @@ body {
     padding: 0;
 
     overflow-x: hidden;
+}
+
+h1 {
+    text-align: center;
+}
+
+header {
+    position: fixed;
+    z-index: 999;
+    background-color: white;
+    width: 100%;
+    height: 86px;
+}
+
+footer {
+    color: white;
+    padding: 10px;
+    background-color: #1f2430;
+    display: block;
 }
 
 .background {
@@ -104,14 +131,4 @@ body {
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
-}
-
-@keyframes disappear {
-    50% {
-        text-shadow: 0 0 40px #cbc7c7;
-    }
-    to {
-        text-shadow: 0 0 20px #cbc7c7;
-        opacity: 0;
-    }
 }
