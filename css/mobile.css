@@ -5,6 +5,10 @@ body {
 .background {
     background-image: url("../img/background-mobile.png");
 
+    z-index: -1;
+    width: 100vw;
+    height: calc(100vw / 1694 * 3000);
+
     background-position: 50% 0;
 }
 
@@ -15,8 +19,6 @@ body {
 
     width: 90%;
 
-    margin: 0;
-    position: absolute;
     top: 10%;
     left: 50%;
     -ms-transform: translateX(-50%);

@@ -1,6 +1,11 @@
 .background {
     background-image: url("../img/background.png");
 
+    z-index: -1;
+    width: 100vw;
+    min-height: 700px;
+    height: calc(100vw / 3200 * 1694);
+
     background-position: 50% 50%;
 }
 
@@ -9,9 +14,11 @@
 
     gap: 40px;
 
-    min-width: 602px;
-    width: 35%;
+    min-width: 30%;
+    width: 602px;
+    max-width: 35%;
 
+    position: absolute;
     top: 50%;
     left: 57%;
     -ms-transform: translateY(-50%);
