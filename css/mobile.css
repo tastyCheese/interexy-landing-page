@@ -6,7 +6,10 @@ body {
     background-image: url("../img/background-mobile.png");
 
     width: 100vw;
-    height: calc(100vw / 1694 * 3000);
+    height: auto;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
 
     background-position: 50% 0;
 }
@@ -18,7 +21,7 @@ body {
 
     width: 90%;
 
-    top: 10%;
+    position: relative;
     left: 50%;
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -34,4 +37,3 @@ body {
     line-height: 200%;
     text-align: center;
 }
-
