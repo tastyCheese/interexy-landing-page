@@ -1,5 +1,6 @@
 .background {
     background-image: url("../img/background.png");
+    background-size: cover;
 
     width: 100vw;
     min-height: 700px;
