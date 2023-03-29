@@ -1,6 +1,5 @@
 @import url(mobile.css);
-@import url(tablet.css) (min-width: 1024px) and (max-width: 1399px) and (min-height: 650px) and (min-aspect-ratio: 119/73);
-@import url(desktop.css) (min-width: 1400px) and (min-height: 650px) and (min-aspect-ratio: 119/73);
+@import url(desktop.css) (min-width: 1024px) and (min-height: 650px) and (min-aspect-ratio: 119/73);
 
 @import url('https://fonts.googleapis.com/css2?family=Commissioner');
 @import url('https://fonts.googleapis.com/css2?family=Nunito');
@@ -38,6 +37,7 @@ body {
     font-family: 'Commisioner', sans-serif;
     font-style: normal;
     font-weight: 700;
+    font-size: calc(30px + 43 * (100vw - 139px) / 1461);
 
     flex: none;
     order: 0;
@@ -50,6 +50,7 @@ body {
     font-family: 'Nunito', sans-serif;
     font-style: normal;
     font-weight: 400;
+    font-size: calc(16px + 4 * (100vw - 139px) / 1461);
 
     flex: none;
     order: 1;

@@ -9,8 +9,8 @@
 
     gap: 40px;
 
-    width: 602px;
-    max-width: 35%;
+    min-width: 602px;
+    width: 35%;
 
     top: 50%;
     left: 57%;
@@ -19,7 +19,6 @@
 }
 
 .title {
-    font-size: 73px;
     line-height: 120%;
     text-align: left;
 }
@@ -27,4 +26,5 @@
 .content {
     font-size: 18px;
     line-height: 200%;
+    text-align: left;
 }
