@@ -1,9 +1,71 @@
 @import url(mobile.css);
-@import url(tablet.css) (min-width: 1024px) and (max-width: 1399px) and (min-height: 600px) and (min-aspect-ratio: 119/73);
-@import url(desktop.css) (min-width: 1400px) and (min-height: 600px) and (min-aspect-ratio: 119/73);
+@import url(tablet.css) (min-width: 1024px) and (max-width: 1399px) and (min-height: 650px) and (min-aspect-ratio: 119/73);
+@import url(desktop.css) (min-width: 1400px) and (min-height: 650px) and (min-aspect-ratio: 119/73);
 
-#hire-button {
+@import url('https://fonts.googleapis.com/css2?family=Commissioner');
+@import url('https://fonts.googleapis.com/css2?family=Nunito');
+
+body {
+    color: white;
+    font-family: sans-serif;
+}
+
+.background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100%;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hello {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+    margin: 0;
+    position: absolute;
+}
+
+.title {
+    width: 100%;
+
+    font-family: 'Commisioner', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.content {
+    width: 100%;
+
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.hire-button, .hire-button:visited {
     box-sizing: border-box;
+
+    text-decoration: none;
+    color: white;
+    font-family: Commissioner, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(16px + 2*(100vw - 139px)/1461);
+    line-height: 22px;
 
     display: flex;
     flex-direction: row;
@@ -13,7 +75,7 @@
     margin-bottom: 20px;
     gap: 11px;
 
-    width: 331px;
+    width: max-content;
     max-width: 100%;
     height: 65px;
 
@@ -28,66 +90,23 @@
     flex-grow: 0;
 }
 
-#arrow {
-    width: 30px;
-    height: 30px;
+.hire-button:hover {
+    background: #3e3465;
+    box-shadow: none;
 
-    flex: none;
-    margin: 0;
-
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
 }
 
-#arrow-body {
-    width: 15px;
-    height: 15px;
-
-    margin: 0;
-
-    position: relative;
-    transform: translate(50%, 50%);
-}
-
-#arrow-borders {
-    width: 10px;
-    height: 10px;
-
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    margin: 0;
-
-    border-top: 1.7px white solid;
-    border-right: 1.7px white solid;
-}
-
-#arrow-line {
-
-    position: absolute;
-    bottom: 0;
-    left: 0;
-
-    width: 20px;
-    border-bottom: 1.7px solid white;
-    transform: rotate(-45deg);
-    transform-origin: left;
-}
-
-#hire-button-text {
-    width: max-content;
-    height: 22px;
-
-    font-family: Commissioner, sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-
-    display: flex;
-    align-items: center;
-    text-transform: capitalize;
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+@keyframes disappear {
+    50% {
+        text-shadow: 0 0 40px #cbc7c7;
+    }
+    to {
+        text-shadow: 0 0 20px #cbc7c7;
+        opacity: 0;
+    }
 }
